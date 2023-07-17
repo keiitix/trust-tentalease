@@ -41,7 +41,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	position: relative;
     overflow:hidden;
     width:100%;
-    height:568px;
+    height:400px;
 }
 
 #header img{
@@ -105,7 +105,14 @@ section h2{
 	font-weight:normal;
 	text-align: center;
 }
-
+#car {
+	/* ここに適用したいスタイルを記述します */
+	padding-top: 40px;
+	/* 他のスタイルプロパティを追加します */
+}
+#tips{
+	padding-top: 110px;
+}
 .inner{
 	width: 94%;
 	margin: 0 auto;
@@ -140,7 +147,12 @@ section h2{
 
 .bg{
 	line-height: 0;
+	text-align: center;
 }
+.bg img {
+	width: 200px;
+	height: auto;
+  }
 
 .txt h2{
 	padding: 0 0 20px !important;
@@ -229,7 +241,7 @@ section h2{
 		padding-bottom: 120px;
 	}
 	section h2{
-		padding: 70px 0 20px;
+		padding: 30px 0 20px;
 	}
 	.txt h2{
 		padding: 0 0 20px !important;
@@ -248,7 +260,6 @@ section h2{
 	.panel{
 		display:block !important;
 	}
-
 	#mainnav{
 		position:fixed;
 		top: 0;
@@ -295,9 +306,15 @@ section h2{
 		display: table;
 	background: #f6f6f6;
 	}
-
+	#ご利用{
+		padding-top: 40px;
+	}
 	#sec02_02 .txt, #sec02_02 .bg{
 		float: right;
+	}
+	#sec02_02 .txt, #sec02_02 .bg img{
+		width: 400px;
+		height: auto;
 	}
 
 	.vMid{
@@ -320,12 +337,15 @@ section h2{
 		vertical-align: top;
 		text-align: left;
 	}
-	
+	#mobile-nav{
+		display: none;
+	}
 	/* SEC05 PROFILE
 	-----------------*/
 	#sec05{
 		padding-top: 120px;
 	}
+	
 	
   #footer{
 		padding: 30px 10px 70px 0;
@@ -348,12 +368,29 @@ section h2{
 }
 
 @media only screen and (max-width: 799px){
+	#header{
+		position: relative;
+		overflow:hidden;
+		width:100%;
+		height:300px;
+	}
+	#slogan{
+		position: absolute;
+		top: 70%;
+		width: 100%;
+		-webkit-transform: translate(0, -50%);
+	  transform: translate(0, -50%);
+		color: #05aff8;
+		line-height: 1.2;
+		text-align: center;
+	}
 	#slogan h1{
 		font-size: 31px;
 	}
 
 	#slogan h2{
 		font-size: 16px;
+		
 	}
 
   a#menu{
@@ -432,7 +469,7 @@ section h2{
 		text-align: right;
 		z-index:500;
 	}
-
+	
 	#mainnav ul{
 		border-bottom: 1px solid #ccc;
 		background: #fff;
@@ -467,6 +504,48 @@ section h2{
 		display: block;
 	max-width: 288px;
 	}
+	#mobile-nav {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		text-align: right;
+		z-index: 500;
+		background-color: rgb(255, 255, 255);
+	  }
+	
+	  #mobile-nav img {
+		width: auto;
+		height: 30px;
+		float: left;
+		padding: 20px 10px 0px;
+	  }
+	
+	  #mobile-nav ul {
+		text-align: right;
+		padding-right: 30px;
+	  }
+	
+	  #mobile-nav li {
+		display: inline-block;
+		padding: 35px 10px 0px;
+		font-size: 14px;
+		font-weight: 400;
+	  }
+	
+	  #mobile-nav a {
+		color: #000;
+	  }
+	
+	  #mobile-nav.changeNav {
+		background: rgba(4, 4, 4, 0.9);
+		border-bottom: 1px solid #060505;
+	  }
+	
+	  #mobile-nav.changeNav li {
+		padding: 20px 10px;
+	  }
+
 }
 
 @media only screen and (max-width: 1199px){
