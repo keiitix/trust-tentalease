@@ -108,8 +108,8 @@ section h2{
 .slider{
 	width:100%;
 	margin:0 auto;
-  }
-  .slider img{
+}
+.slider img{
 	width:100%;
 }
 .slider .slick-slide{
@@ -144,102 +144,9 @@ section h2{
 .col2 li{
 	display: inline-block;
 	width: 100%;
-  	margin: 20px 0 20px 0;
+	margin: 20px 0 20px 0;
 	color: #000;
 }
-.carousel {
-	width: 600px;
-	height: calc(600px * 0.5625);
-	margin: 0 auto;
-	position: relative;
-  }
-  .carousel-area {
-
-	height: 100%;
-	display: flex;
-	position: absolute;
-  }
-  .carousel-list {
-	width: 600px;
-  　height: calc(600px * 0.5625);
-	margin-right: 30px;
-  }
-  .carousel-img {
-	width: 100%;
-	height: auto;
-  }
-
-  /* ボタンタグの装飾リセット */
-button {
-	cursor: pointer;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	vertical-align: middle;
-	color: inherit;
-	font: inherit;
-	border: 0;
-	background: transparent;
-	padding: 0;
-	margin: 0;
-	outline: none;
-	border-radius: 0;
-  }
-  /*********** スライド送りボタン ***********/
-  /* 共有パーツ */
-  .arow-wrap {
-	width: 90%;
-	height: 100%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  }
-  .arrow-btn {
-	width: 48px;
-	height: 48px;
-	background-color: rgba(31, 84, 145, 0.804);
-	border-radius: 50%;
-	transition: .2s;
-  }
-  .arrow-btn:focus {
-	box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
-  }
-  .arrow-btn:hover {
-	background-color: rgb(51, 79, 216);
-	box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.8);
-  }
-  .arrow-left {
-	position: relative
-  }
-  /* ボタン左の中身（三角を擬似要素で表現） */
-  .arrow-left:before {
-	content: "";
-	width: 10px;
-	height: 10px;
-	border-top: 2px solid #fefefe;
-	border-left: 2px solid #fefefe;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-30%, -50%)rotate(-45deg);
-  }
-  /* 右 */
-  .arrow-right {
-	position: relative
-  }
-  /* ボタン右の中身（三角を擬似要素で表現） */
-  .arrow-right:before {
-	content: "";
-	width: 10px;
-	height: 10px;
-	border-top: 2px solid #fefefe;
-	border-left: 2px solid #fefefe;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-70%, -50%)rotate(135deg);
-  }
 /* SEC01 VISION
 ------------------------------------------------------------*/
 
@@ -265,7 +172,7 @@ button {
 .bg img {
 	width: 200px;
 	height: auto;
-  }
+}
 
 .txt h2{
 	padding: 0 0 20px !important;
@@ -366,7 +273,7 @@ button {
 		font-size:14px;
 	}
 	
-  a#menu{
+	a#menu{
 		display:none;
 	}	
 
@@ -398,7 +305,7 @@ button {
 		font-weight: 300;
 	}
 	
-  #mainnav a{
+	#mainnav a{
 		color: #000;
 	}
 	
@@ -460,7 +367,7 @@ button {
 	}
 	
 	
-  #footer{
+	#footer{
 		padding: 30px 10px 70px 0;
 	}
 }
@@ -475,7 +382,7 @@ button {
 
 @media only screen and (max-width: 640px){
 	#map iframe{
-	  width: 96% !important;
+		width: 96% !important;
 		left: 2%;
 	}
 }
@@ -492,7 +399,7 @@ button {
 		top: 70%;
 		width: 100%;
 		-webkit-transform: translate(0, -50%);
-	  transform: translate(0, -50%);
+		transform: translate(0, -50%);
 		color: #05aff8;
 		line-height: 1.2;
 		text-align: center;
@@ -506,62 +413,62 @@ button {
 		
 	}
 
-  a#menu{
-  	display: inline-block;
-  	position: relative;
-  	width: 40px;
-  	height: 40px;
-  	margin: 10px;
+	a#menu{
+		display: inline-block;
+		position: relative;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
 	}
 
 	#menuBtn{
-  	display: block;
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	width: 18px;
-  	height: 2px;
-  	margin: -1px 0 0 -7px;
-  	background: #fff;
-  	transition: .2s;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 18px;
+		height: 2px;
+		margin: -1px 0 0 -7px;
+		background: #fff;
+		transition: .2s;
 	}
 
 	#menuBtn:before, #menuBtn:after{
-  	display: block;
-  	content: "";
-  	position: absolute;
-  	top: 50%;
-  	left: 0;
-  	width: 18px;
-  	height: 2px;
-  	background: #fff;
-  	transition: .3s;
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 18px;
+		height: 2px;
+		background: #fff;
+		transition: .3s;
 	}
 
 	#menuBtn:before{
-  	margin-top: -7px;
+		margin-top: -7px;
 	}
 
 	#menuBtn:after{
-  	margin-top: 5px;
+		margin-top: 5px;
 	}
 
 	a#menu .close{
-  	background: transparent;
+		background: transparent;
 	}
 
 	a#menu .close:before, a#menu .close:after{
-  	margin-top: 0;
+		margin-top: 0;
 	}
 
 	a#menu .close:before{
-  	transform: rotate(-45deg);
-  	-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
 	}
 
 	a#menu .close:after{
-  	transform: rotate(-135deg);
-  	-webkit-transform: rotate(-135deg);
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
 	}
 
 	.panel{
@@ -627,8 +534,8 @@ button {
 		height: 42px;
 		cursor: pointer;
 		text-align: center;
-	  }
-	  .hamburger span {
+	}
+	.hamburger span {
 		display : block;
 		position: absolute;
 		width   : 30px;
@@ -638,38 +545,33 @@ button {
 		-webkit-transition: 0.3s ease-in-out;
 		-moz-transition   : 0.3s ease-in-out;
 		transition        : 0.3s ease-in-out;
-	  }
-	  .hamburger span:nth-child(1) {
+	}
+	.hamburger span:nth-child(1) {
 		top: 10px;
-	  }
-	  .hamburger span:nth-child(2) {
+	}
+	.hamburger span:nth-child(2) {
 		top: 20px;
-	  }
-	  .hamburger span:nth-child(3) {
+	}
+	.hamburger span:nth-child(3) {
 		top: 30px;
-	  }
-	  
-	  /* スマホメニューを開いてる時のボタン */
-	  .hamburger.active span:nth-child(1) {
+	}
+	.hamburger.active span:nth-child(1) {
 		top : 16px;
 		left: 6px;
 		background :#000000;
 		-webkit-transform: rotate(-45deg);
 		-moz-transform   : rotate(-45deg);
 		transform        : rotate(-45deg);
-	  }
-	  
-	  .hamburger.active span:nth-child(2),
-	  .hamburger.active span:nth-child(3) {
+	}
+	.hamburger.active span:nth-child(2),
+	.hamburger.active span:nth-child(3) {
 		top: 16px;
 		background :#000000;
 		-webkit-transform: rotate(45deg);
 		-moz-transform   : rotate(45deg);
 		transform        : rotate(45deg);
-	  }
-	  
-	  /* メニュー背景　*/
-	  .globalMenuSp {
+	}
+	.globalMenuSp {
 		position: fixed;
 		z-index : 600;
 		top  : 0;
@@ -680,34 +582,30 @@ button {
 		width: 100%;
 		transform: translateX(100%);
 		transition: all 0.6s;
-	  }
-	  
-	  .globalMenuSp ul {
+	}
+	.globalMenuSp ul {
 		margin: 0 auto;
 		padding: 0;
 		width: 100%;
-	  }
-	  
-	  .globalMenuSp ul li {
+	}
+	.globalMenuSp ul li {
 		list-style-type: none;
 		padding: 0;
 		width: 100%;
 		transition: .4s all;
-	  }
-	  .globalMenuSp ul li:last-child {
+	}
+	.globalMenuSp ul li:last-child {
 		padding-bottom: 0;
-	  }
-	  .globalMenuSp ul li:hover{
+	}
+	.globalMenuSp ul li:hover{
 		background :#d70202;
-	  }
-	  
-	  .globalMenuSp ul li a {
+	}
+	.globalMenuSp ul li a {
 		display: block;
 		color: #141212;
 		padding: 1em 0;
 		text-decoration :none;
-	  }
-	  
+	}
 	#mobile-nav {
 		position: fixed;
 		top: 0;
@@ -716,39 +614,40 @@ button {
 		text-align: right;
 		z-index: 500;
 		background-color: rgb(255, 255, 255);
-	  }
+	}
 	
-	  #mobile-nav img {
+	#mobile-nav img {
 		width: auto;
 		height: 30px;
 		float: left;
 		padding: 20px 10px 0px;
-	  }
+	}
 	
-	  #mobile-nav ul {
+	#mobile-nav ul {
 		text-align: right;
 		padding-right: 30px;
-	  }
+	}
 	
-	  #mobile-nav li {
+	#mobile-nav li {
 		display: inline-block;
 		padding: 35px 10px 0px;
 		font-size: 14px;
 		font-weight: 400;
-	  }
+	}
 	
-	  #mobile-nav a {
+	#mobile-nav a {
 		color: #000;
-	  }
+	}
 	
-	  #mobile-nav.changeNav {
+	#mobile-nav.changeNav {
 		background: rgba(4, 4, 4, 0.9);
 		border-bottom: 1px solid #060505;
-	  }
+	}
 	
-	  #mobile-nav.changeNav li {
+	#mobile-nav.changeNav li {
 		padding: 20px 10px;
 
+	}
 }
 
 @media only screen and (max-width: 1199px){
