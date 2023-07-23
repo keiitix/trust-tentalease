@@ -105,10 +105,32 @@ section h2{
 	font-weight:normal;
 	text-align: center;
 }
+.slider{
+	width:100%;
+	margin:0 auto;
+  }
+  .slider img{
+	width:100%;
+}
+.slider .slick-slide{
+	height:auto!important;
+}
+.slider .slick-next{
+    right:0!important;
+}
+.slider .slick-prev{
+    left:0!important;
+}
+.slider .slick-arrow{
+    width: initial!important;
+    height: initial!important;
+    z-index:2!important;
+}
+.slider .slick-arrow:before{
+    font-size: 30px!important;
+}
 #car {
-	/* ここに適用したいスタイルを記述します */
 	padding-top: 40px;
-	/* 他のスタイルプロパティを追加します */
 }
 #tips{
 	padding-top: 110px;
@@ -595,6 +617,97 @@ button {
 		display: block;
 	max-width: 288px;
 	}
+	.hamburger {
+		display : block;
+		position: fixed;
+		z-index : 3;
+		right : 20px;
+		top   : 20px;
+		width : 42px;
+		height: 42px;
+		cursor: pointer;
+		text-align: center;
+	  }
+	  .hamburger span {
+		display : block;
+		position: absolute;
+		width   : 30px;
+		height  : 2px ;
+		left    : 6px;
+		background : #080808;
+		-webkit-transition: 0.3s ease-in-out;
+		-moz-transition   : 0.3s ease-in-out;
+		transition        : 0.3s ease-in-out;
+	  }
+	  .hamburger span:nth-child(1) {
+		top: 10px;
+	  }
+	  .hamburger span:nth-child(2) {
+		top: 20px;
+	  }
+	  .hamburger span:nth-child(3) {
+		top: 30px;
+	  }
+	  
+	  /* スマホメニューを開いてる時のボタン */
+	  .hamburger.active span:nth-child(1) {
+		top : 16px;
+		left: 6px;
+		background :#000000;
+		-webkit-transform: rotate(-45deg);
+		-moz-transform   : rotate(-45deg);
+		transform        : rotate(-45deg);
+	  }
+	  
+	  .hamburger.active span:nth-child(2),
+	  .hamburger.active span:nth-child(3) {
+		top: 16px;
+		background :#000000;
+		-webkit-transform: rotate(45deg);
+		-moz-transform   : rotate(45deg);
+		transform        : rotate(45deg);
+	  }
+	  
+	  /* メニュー背景　*/
+	  .globalMenuSp {
+		position: fixed;
+		z-index : 600;
+		top  : 0;
+		left : 0;
+		color: #000000;
+		background: rgba( 71,70,73,0.6 );
+		text-align: center;
+		width: 100%;
+		transform: translateX(100%);
+		transition: all 0.6s;
+	  }
+	  
+	  .globalMenuSp ul {
+		margin: 0 auto;
+		padding: 0;
+		width: 100%;
+	  }
+	  
+	  .globalMenuSp ul li {
+		list-style-type: none;
+		padding: 0;
+		width: 100%;
+		transition: .4s all;
+	  }
+	  .globalMenuSp ul li:last-child {
+		padding-bottom: 0;
+	  }
+	  .globalMenuSp ul li:hover{
+		background :#d70202;
+	  }
+	  
+	  .globalMenuSp ul li a {
+		display: block;
+		color: #141212;
+		padding: 1em 0;
+		text-decoration :none;
+	  }
+	  
 	#mobile-nav {
 		position: fixed;
 		top: 0;
@@ -635,20 +748,7 @@ button {
 	
 	  #mobile-nav.changeNav li {
 		padding: 20px 10px;
-	  }
-	  .carousel {
-		width: 300px;
-		height: calc(300px * 0.5625);
-	  }
-	  .carousel-area {
 
-	  }
-	  .carousel-list {
-		width: 300px;
-		height: calc(300px * 0.5625);
-		margin-right: 0;
-	  }
-	  
 }
 
 @media only screen and (max-width: 1199px){
