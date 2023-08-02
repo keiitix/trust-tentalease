@@ -40,7 +40,7 @@
 		<span></span>
 		<span></span>
 	</div>
-	<div class="globalMenuSp">
+	<nav class="globalMenuSp">
 		<ul>
 			<li><a href="#news">お知らせ</a></li>
 			<li><a href="#tips">ご利用</a></li>
@@ -49,7 +49,7 @@
             <li><a href="#questions">よくあるご質問</a></li>
 			<li><a href="#about">会社概要</a></li>
 		</ul>
-	</div>
+	</nav>
 </nav>
 
 <header id="header">
@@ -127,7 +127,10 @@
 				<p>型番：ZRR70</p>
                 <p>８人乗り</p>
                 <p>ご利用料金</p>
-                <p>通常価格：¥16,600(税込) → 開業記念キャンペーン　¥12,000（税込）</p>
+				<p>通常価格：¥16,600(税込)</p>
+				<p>↓</p>
+				<p style="color:red; font-weight:bold;">開業記念キャンペーン価格:</p>
+                <p style="font-weight:bold; font-size: 20px;">¥10,000（税込）</p>
 			</li>
 			<li>
 				<h2>VOXY</h2>
@@ -153,7 +156,10 @@
                 <p>型番：ANH10</p>
                 <p>８人乗り</p>
                 <p>ご利用料金</p>
-                <p>通常価格：¥16,600(税込) → 開業記念キャンペーン　¥12,000（税込）</p>
+				<p>通常価格：¥16,600(税込)</p>
+				<p>↓</p>
+				<p style="color:red; font-weight:bold;">開業記念キャンペーン価格:</p>
+                <p style="font-weight:bold; font-size: 20px;">¥10,000（税込）</p>
 			</li>
 		</ul>
 	</div>
@@ -199,6 +205,48 @@
 	<header>
 		<h2>よくあるご質問</h2>
 	</header>
+		<div class="s_section">
+		<div class="accordion_area gutter">
+			<div class="accordion_one">
+				<div class="ac_header">
+					<div class="p-faq__headinner">
+						<p class="p-faq__q-txt">軽自動車やコンパクトカーはありますか？</p>
+					</div>
+					<div class="i_box"></div>
+				</div>
+				<div class="ac_inner">
+					<div class="p-faq__bodyinner">
+						<p class="p-faq__a-txt">取り扱い車種は、ミニバンやワゴン車など大人数が乗れる大きな車のみとなります。</p>
+					</div>
+				</div>
+			</div>
+			<div class="accordion_one">
+				<div class="ac_header">
+					<div class="p-faq__headinner">
+						<p class="p-faq__q-txt">Bluetoothは付いてますか？</p>
+					</div>
+					<div class="i_box"></div>
+				</div>
+				<div class="ac_inner">
+					<div class="p-faq__bodyinner">
+						<p class="p-faq__a-txt">全車種にBluetooth付きのナビ、バックカメラ、ETC車載器を装備しております。追加料金は発生しません。</p>
+					</div>
+				</div>
+			</div>
+			<div class="accordion_one">
+				<div class="ac_header">
+					<div class="p-faq__headinner">
+						<p class="p-faq__q-txt">大阪府以外で配車は可能ですか？</p>
+					</div>
+					<div class="i_box"></div>
+				</div>
+				<div class="ac_inner">
+					<div class="p-faq__bodyinner">
+						<p class="p-faq__a-txt">可能です。兵庫県、京都府、和歌山県、奈良県、滋賀県への配送の場合は、遠方配送料1,500円を別途頂戴致します。（関西圏外への配送はお断りしております。）</p>
+					</div>
+				</div>
+			</div>
+			<p>※その他のご質問はお気軽にお電話ください。</p>
 </section>
 <!-- PROFILE -->
 <section id="about">
@@ -280,6 +328,12 @@
 			$('.globalMenuSp').removeClass('active');
 		$('.hamburger').removeClass('active');
 
+		});
+	});
+	$(function(){
+		$('.accordion_one .ac_header').click(function(){
+			$(this).next('.ac_inner').slideToggle();
+			$(this).toggleClass("open");
 		});
 	});
 </script>
