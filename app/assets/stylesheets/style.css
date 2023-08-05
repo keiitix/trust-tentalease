@@ -136,7 +136,7 @@ section h2{
 	padding-top: 110px;
 }
 .inner{
-	width: 94%;
+	width: 70%;
 	margin: 0 auto;
 	padding-bottom: 50px;
 }
@@ -170,7 +170,7 @@ section h2{
 	text-align: center;
 }
 .bg img {
-	width: 200px;
+	width: 275px;
 	height: auto;
 }
 
@@ -692,8 +692,8 @@ section h2{
 		display : block;
 		position: fixed;
 		z-index : 3;
-		right : 20px;
-		top   : 20px;
+		right : 12px;
+		top   : 12px;
 		width : 42px;
 		height: 42px;
 		cursor: pointer;
@@ -778,6 +778,7 @@ section h2{
 		text-decoration :none;
 	}
 
+
 }
 
 @media only screen and (max-width: 1199px){
@@ -788,6 +789,7 @@ section h2{
 		padding: 70px 0 20px;
 	}
 	.vMid{
-		padding: 0 20px;
+		padding: 0 50px;
+		padding-bottom: 35px;
 	}
 }
