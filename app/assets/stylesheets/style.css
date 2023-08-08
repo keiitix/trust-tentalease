@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
 @font-face {
 	font-family: 'YasashisaBold'; /* 任意の名前 */
 	src: url('assets/fonts/yasashisaBold.ttf') format('truetype'); /* ファイルのパスと形式 */
