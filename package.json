@@ -13,5 +13,8 @@
   "devDependencies": {
     "firebase": "^10.0.0",
     "webpack-dev-server": "^4.15.1"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
