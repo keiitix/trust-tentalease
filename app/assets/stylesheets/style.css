@@ -705,12 +705,27 @@ section h2{
 		float: left;
 		padding: 20px 10px 0px;
 	}
-
+	.phone-icon {
+		display: block;
+		position: fixed;
+		z-index: 3;
+		right: 34px;
+		top: 16px;
+		width: 42px;
+		height: 42px;
+		cursor: pointer;
+		text-align: center;
+		background-image: url('/assets/phoneIcon.png'); /* 電話アイコンのURL */
+		background-size: 30px;
+		background-repeat: no-repeat;
+		padding-left: 25px;
+	}
 	.col3 li{
 		margin: 0 auto;
 		display: block;
 	max-width: 288px;
 	}
+	
 	.hamburger {
 		display : block;
 		position: fixed;
