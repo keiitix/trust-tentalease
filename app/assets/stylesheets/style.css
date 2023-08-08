@@ -739,7 +739,7 @@ section h2{
 		display: block;
 		position: fixed;
 		z-index : 600;
-		top  : 60px;
+		top  : 50px;
 		left : 0;
 		color: #ffffff;
 		background: rgba(0, 0, 0, 0.9);
