@@ -133,7 +133,7 @@ section h2{
 	padding-top: 40px;
 }
 #tips{
-	padding-top: 110px;
+	padding-top: 100px;
 }
 .inner{
 	width: 70%;
@@ -468,11 +468,18 @@ section h2{
 
 	/* SEC02 MESSAGE
 	-----------------*/
+	#tips{
+		padding-top: 110px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 	.txt, .bg{
 		width: 50%;
 		float: left;
 		display: table;
 	background: #f6f6f6;
+	height: 390px;
+	
 	}
 	#ご利用{
 		padding-top: 40px;
@@ -480,11 +487,17 @@ section h2{
 	#sec02_02 .txt, #sec02_02 .bg{
 		float: right;
 	}
-	#sec02_02 .txt, #sec02_02 .bg img{
+	#sec02_02 .txt{
+	    width: 50%;
+    float: left;
+    display: table;
+    background: #f6f6f6;
+    height: 390px;
+	}
+	#sec02_02 .bg img{
 		width: 400px;
 		height: auto;
 	}
-
 	.vMid{
 		display: table-cell;
 		padding: 0 100px;
@@ -777,7 +790,10 @@ section h2{
 		padding: 1em 0;
 		text-decoration :none;
 	}
-
+	.bg{
+		line-height: 0;
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width: 1199px){
@@ -789,6 +805,5 @@ section h2{
 	}
 	.vMid{
 		padding: 0 50px;
-		padding-bottom: 35px;
 	}
 }
