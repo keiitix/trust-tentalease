@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
-
+@font-face {
+	font-family: 'YasashisaBold'; /* 任意の名前 */
+	src: url('assets/fonts/yasashisaBold.ttf') format('truetype'); /* ファイルのパスと形式 */
+}
 /* reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
 address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
@@ -29,7 +32,8 @@ a{
 }
 
 a:hover, .active{
-  text-decoration: underline;
+  text-decoration: none;
+  
 }
 
 a:active, a:focus,input:active, input:focus{outline:0;}
@@ -703,7 +707,14 @@ section h2{
 		width: auto;
 		height: 30px;
 		float: left;
-		padding: 20px 10px 0px;
+		padding: 20px 0px 0px;
+	}
+	.companyName{
+		font-family: 'YasashisaBold';
+		font-weight: bold;
+		color: #000;
+		float: left;
+		padding: 26px 0px 0px;
 	}
 	.phone-icon {
 		display: block;
