@@ -19,9 +19,9 @@ h1,h2,h3,h4,h5,h6{font-size:100%;}
 img,abbr,acronym,fieldset{border:0;}
 
 body{
-	font-family: 'YasashisaBold';
-	/* font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
-	font-weight: 300; */
+
+	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+	font-weight: 300;
 	-webkit-text-size-adjust:100%;
 	overflow-x: hidden;
 	color: #000;
@@ -32,7 +32,7 @@ body{
 a{
 	color: #0066ff;
 	text-decoration: none;
-	font-family: 'YasashisaBold';
+
 }
 
 a:hover, .active{
@@ -134,6 +134,10 @@ section h2{
 }
 .slider .slick-arrow:before{
     font-size: 30px!important;
+}
+.phoneNumber{
+	text-decoration: none;
+	color: #000;
 }
 #car {
 	padding-top: 40px;
@@ -515,7 +519,14 @@ section h2{
 		padding: 0 100px;
 		vertical-align: middle;
 	}
-	
+	.companyName{
+		font-family: 'YasashisaBold';
+		font-weight: bold;
+		color: #000;
+		float: left;
+		font-size: 20px;
+		padding: 40px 0px 0px;
+	}
 	/* SEC03 SERVICE MESSAGE STORY
 	-----------------*/
 	.col3{
