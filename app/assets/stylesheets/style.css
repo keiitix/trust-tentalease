@@ -146,7 +146,7 @@ section h2{
 	padding-top: 100px;
 }
 .inner{
-	width: 70%;
+
 	margin: 0 auto;
 	padding-bottom: 50px;
 }
@@ -220,6 +220,39 @@ section h2{
 
 #sec05 dl{
 	line-height: 1.2;
+	
+}
+dt {
+    font-weight: bold; /* テキストを太字に設定 */
+  }
+.item {
+    display: flex;
+    flex-direction: column; /* 垂直に並べる */
+    align-items: center;    /* 中央揃え */
+	padding-top: 10px;  
+    padding-bottom: 10px;    /* 下にスペースを追加 */
+  }
+  .item:nth-child(odd) {
+    background-color: #f5f5f5; /* 奇数行の背景色 */
+  }
+  .item:nth-child(even) {
+    background-color: #ffffff; /* 偶数行の背景色 */
+  }
+  .card-logo {
+    width: 100%;
+    height: auto;
+  }
+  .cardImage{
+	display: flex;      /* フレックスボックスを有効にする */
+	align-items: center; /* 子要素を中央揃えにする（必要に応じて） */
+  }
+  .cardImageBox{
+	flex: 1; /* 各ボックスに均等な幅を割り当てる */
+	display: flex; /* 画像を中央に配置するためのフレックスボックス */
+	justify-content: center; /* 横方向の中央揃え */
+	align-items: center; /* 縦方向の中央揃え */
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 #sec05 dt{
@@ -581,7 +614,7 @@ section h2{
 	#header img{
 		position: absolute;
 		left: 50%;
-		top: 60%;
+		top: 45%;
 		transform: translate(-50%, -50%);
 	}
 	#slogan{
@@ -845,6 +878,7 @@ section h2{
 		line-height: 0;
 		text-align: center;
 	}
+
 }
 
 @media only screen and (max-width: 1199px){
